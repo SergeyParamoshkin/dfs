@@ -69,7 +69,7 @@ func dfs(start int, g *cgraph.Graph, gnr *cgraph.Node) {
 				log.Fatal(err)
 			}
 
-			e, err := g.CreateEdge("", gnr, gn)
+			e, err := g.CreateEdge(strconv.Itoa(v), gnr, gn)
 			if err != nil {
 				log.Fatal(err)
 			}
